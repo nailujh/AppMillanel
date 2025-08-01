@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Enviar correo</title>
+  <script>
+    window.onload = function () {
+      const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      
+      const appmillanel = "https://play.google.com/store/apps/details?id=com.millanel.digital";
+
+      const tiendamillanel = "https://tienda.millanel.com/acceso";
+
+      // Redirige automáticamente según el dispositivo
+      if (isMobile) {
+        window.location.href = appmillanel;
+      } else {
+        window.location.href = tiendamillanel;
+      }
+    };
+  </script>
+</head>
+<body>
+  <p>Redirigiendo a la tienda Millanel...</p>
+</body>
+</html>
